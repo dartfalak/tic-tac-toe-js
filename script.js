@@ -1,7 +1,7 @@
 let blocks = document.querySelectorAll('.block');
 let resetButton = document.getElementById('#reset');
 
-let currentPlayer0 = true;
+let currentPlayerO = true;
 
 const board = [ 
     [0,1,2],
@@ -19,6 +19,13 @@ const board = [
 blocks.forEach((block) => {
     block.addEventListener('click', () => {
         console.log('clicked');
+      if(currentPlayerO){
+        block.textContent = 'O';
+        currentPlayerO = false;
+      } else {
+        block.textContent = 'X';
+        currentPlayerO = true;
+      }
 
-    })
+    });
 });
