@@ -1,7 +1,7 @@
 let blocks = document.querySelectorAll('.block');
-let resetButton = document.getElementById('#reset');
-let newGameButton = document.getElementById('#btn');
-let winMessage = document.getElementById('#win');
+let resetButton = document.getElementById('reset');
+let newGameButton = document.getElementById('btn');
+let winMessage = document.getElementById('win');
 let infoBox = document.querySelector('.info');
 
 let currentPlayerO = true;
@@ -17,7 +17,21 @@ const board = [
     [6,7,8],
 
 
-]
+];
+
+const resetGame = () => {
+   currentPlayerO = true;
+   enableAllBlocks();
+   winMessage.classList.add('hide');
+
+
+
+
+}
+
+
+
+
 
 blocks.forEach((block) => {
     block.addEventListener('click', () => {
@@ -88,11 +102,6 @@ const checkWin = () => {
 
 };
 
-const resetGame = () => {
-   currentPlayerO = true;
-   enableAllBlocks();
 
-
-
-
-}
+newGameButton.addEventListener('click', resetGame);
+resetButton.addEventListener('click', resetGame);
