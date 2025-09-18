@@ -68,7 +68,7 @@ h1 {
 
  #reset {
     display: block;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -76,6 +76,8 @@ h1 {
     color: white;
     border: none;
     border-radius: 5px;
+    margin-left: 750px;
+    margin-top: -300px;
     
 }
 
@@ -89,7 +91,7 @@ h1 {
 
 #btn {
     display: block;
-    margin: 20px auto;
+    /* margin: 20px auto; */
      padding: 10px 20px; 
     font-size: 16px;
     cursor: pointer;
@@ -98,6 +100,8 @@ h1 {
     color: white;
     border: none;
     border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 710px;
 
 }
 
