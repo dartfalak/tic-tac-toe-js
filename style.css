@@ -51,7 +51,7 @@ h1 {
 }
 
 
-#reset {
+/* #reset {
     display: block;
     margin: 20px auto;
      padding: 10px 20px; 
@@ -63,6 +63,26 @@ h1 {
     border: none;
     border-radius: 5px;
     margin-top: -300px;
+}
+ */
+
+ #reset {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.info {
+    text-align: center;
+    padding: 20px;
+    
 }
 
 
@@ -87,11 +107,6 @@ h1 {
 
 }
 
-.info {
-    text-align: center;
-    height: 40px;
-
-}
 
 .hide {
     display: none;

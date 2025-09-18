@@ -93,7 +93,7 @@ const checkWin = () => {
             if(pos1Value === pos2Value && pos2Value === pos3Value) {
                 alert(`${pos1Value} has won!`);
 
-                showWinMessage(post1Value);
+                // showWinMessage(pos1Value);
 
                     
         }
