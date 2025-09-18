@@ -44,10 +44,19 @@ const disableAllBlocks = () => {
 };
 
 
+const enableAllBlocks = () => {
+    for(let block of blocks) {
+        block.disabled = false;
+        block.innerText = '';
+    }
+};
+
+
 
  const showWinMessage = (winner) => { 
      infoBox.innerText = `${winner} has won!`;
     winMessage.classList.remove('hide');
+    disableAllBlocks();
 
  };
      
@@ -80,7 +89,8 @@ const checkWin = () => {
 };
 
 const resetGame = () => {
-
+   currentPlayerO = true;
+   enableAllBlocks();
 
 
 
