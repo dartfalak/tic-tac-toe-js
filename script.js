@@ -37,12 +37,20 @@ blocks.forEach((block) => {
 });
 
 
-const showWinMessage = (winner) => { 
-    infoBox.innerText = `${winner} has won!`;
+const disableAllBlocks = () => {
+    for(let block of blocks) {
+        block.disabled = true;
+    }
+};
 
 
-}
 
+ const showWinMessage = (winner) => { 
+     infoBox.innerText = `${winner} has won!`;
+    winMessage.classList.remove('hide');
+
+ };
+     
 
 
 
@@ -61,10 +69,20 @@ const checkWin = () => {
         if(pos1Value !== '' && pos1Value === pos2Value && pos2Value === pos3Value) {
             if(pos1Value === pos2Value && pos2Value === pos3Value) {
                 alert(`${pos1Value} has won!`);
+
                 showWinMessage(post1Value);
+
                     
         }
     }  
 }
 
 };
+
+const resetGame = () => {
+
+
+
+
+
+}
