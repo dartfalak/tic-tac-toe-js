@@ -26,6 +26,17 @@ blocks.forEach((block) => {
         block.textContent = 'X';
         currentPlayerO = true;
       }
+      block.disabled = true;
+
+     checkWin();
 
     });
 });
+
+const checkWin = () => {
+    for(pattern of board) {
+        console.log(pattern);
+
+    } 
+
+};
