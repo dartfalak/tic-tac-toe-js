@@ -1,5 +1,8 @@
 let blocks = document.querySelectorAll('.block');
 let resetButton = document.getElementById('#reset');
+let newGameButton = document.getElementById('#btn');
+let winMessage = document.getElementById('#win');
+let infoBox = document.querySelector('.info');
 
 let currentPlayerO = true;
 
@@ -33,6 +36,16 @@ blocks.forEach((block) => {
     });
 });
 
+
+const showWinMessage = (winner) => { 
+    infoBox.innerText = `${winner} has won!`;
+
+
+}
+
+
+
+
 const checkWin = () => {
     for( let pattern of board) {
         console.log
@@ -48,6 +61,8 @@ const checkWin = () => {
         if(pos1Value !== '' && pos1Value === pos2Value && pos2Value === pos3Value) {
             if(pos1Value === pos2Value && pos2Value === pos3Value) {
                 alert(`${pos1Value} has won!`);
+                showWinMessage(post1Value);
+                    
         }
     }  
 }
