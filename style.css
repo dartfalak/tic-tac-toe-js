@@ -16,6 +16,7 @@ h1 {
     padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
+
 }
 
 .container {
@@ -49,3 +50,17 @@ h1 {
     border: none;
 }
 
+
+#reset {
+    display: block;
+    margin: 20px auto;
+     padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: -300px;
+}
